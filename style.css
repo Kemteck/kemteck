@@ -1,0 +1,69 @@
+/*
+Theme Name: Kemteck Theme
+Author: Kyle
+Version: 1
+Description: Kemteck Wordpress theme using layers css, based off vertex theme
+*/
+@import url("layers.css");
+
+.container {}
+
+/*header*/
+#logo {float:left;max-width:150px;}
+
+.header {background:black;padding:1%;}
+
+.menu {float:right;}
+.menu a {color:white;text-decoration:none;}
+.menu li {display:inline-block;padding-right:10px;}
+.menu li li {display:none;}
+.menu li li:hover, .menu li:hover li {display: block;}
+.menu ul ul {position:absolute;background: black; width:auto;padding:1%;z-index: 9999}
+.menu ul ul li {background:black;padding:1%;float:none;}
+
+/*SLider*/
+#slider {overflow:hidden;}
+.lean-slider { position: relative; *zoom: 1;}
+.lean-slider:before,.lean-slider:after {content: " ";display: table;}
+.lean-slider:after {clear: both;}
+.lean-slider-slide { float: left;width: 100%;margin-right: -100%;display: none; }
+.lean-slider-slide.current { display: block; }
+.slider-wrapper { position: relative; background: #fff;-moz-box-shadow: 0 0 3px rgba(0,0,0,0.4);-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.4);box-shadow: 0 0 3px rgba(0,0,0,0.4);}
+.lean-slider { overflow: hidden; }
+.lean-slider-slide {display: block;position: relative;  -webkit-transition: opacity 0.6s linear;-moz-transition: opacity 0.6s linear;-ms-transition: opacity 0.6s linear;-o-transition: opacity 0.6s linear;transition: opacity 0.6s linear;display:none;}
+.lean-slider-slide.current { display:block; }
+.lean-slider-slide img { display: block;width: 100%; }
+#slider-direction-nav {position: absolute;left: 0;top: 47%;width: 100%;-webkit-transition: opacity 0.2s linear;-moz-transition: opacity 0.2s linear;-ms-transition: opacity 0.2s linear;-o-transition: opacity 0.2s linear;transition: opacity 0.2s linear;opacity: 0.2;}
+.slider-wrapper:hover #slider-direction-nav { opacity: 1; }
+#slider-direction-nav a {float: left;display: block;width: 26px;height: 37px;background: url('/wp-content/uploads/2013/11/arrows.png') no-repeat 0 0;text-indent: -9999px;}
+#slider-direction-nav .lean-slider-next {float: right;background-position: 100% 0;}
+#slider-control-nav {position: absolute;left: 0;bottom: 10px;width: 100%;text-align: center;-webkit-transition: opacity 0.2s linear;-moz-transition: opacity 0.2s linear;-ms-transition: opacity 0.2s linear;-o-transition: opacity 0.2s linear;transition: opacity 0.2s linear;opacity: 0.2;}
+.slider-wrapper:hover #slider-control-nav { opacity: 1; }
+#slider-control-nav a {display: inline-block;width: 14px;height: 14px;background: url('/wp-content/uploads/2013/11/bullets.png') no-repeat 0 0;text-indent: -9999px;margin: 0 3px;-webkit-transition: none;-moz-transition: none;-ms-transition: none;-o-transition: none;transition: none;}
+#slider-control-nav a.active { background-position: 100% 0; }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-width : 480px) {#slider-direction-nav,#slider-control-nav { opacity: 1; }}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {#slider-direction-nav,#slider-control-nav { opacity: 1; }}
+
+/*CONTENT*/
+.title {text-align:center;padding:5px;background:#388ACE;}
+
+/*FOOTER*/
+#footer {background:black;}
+#footer ul {list-style:none;}
+#footer a {text-decoration:none;color:white;clear:none;}
+
+/*Google Map*/
+#map-canvas { height: 400px;width:100%; }
+
+/*Social Links*/.connect_fb {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:25px;width:25px;float:left;margin:10px;}
+.connect_twitter {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:24px;width:25px;float:left;background-position:-25px -74px;margin:12px 10px 10px;}   
+.connect_link {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:19px;width:21px;float:left;background-position:-50px -3px;margin:12px 10px 10px;}
+.connect_4 {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:19px;width:22px;float:left;background-position:-50px -28px;margin:12px 10px 10px;}
+.connect_googs {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:25px;width:25px;float:left;background-position:-25px -25px;margin:10px;}
+.connect_instagram {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:23px;width:23px;float:left;background-position:-50px -50px;}
+.connect_tumble {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:23px;width:23px;float:left;background-position:-50px -75px;}
+.connect_you {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:23px;width:25px;float:left;background-position:-48px -98px;margin:10px;}
+.connect_pin {background:url('/wp-content/uploads/2013/06/kyles_sprites.png');height:23px;width:25px;float:left;background-position:-25px -50px;}
+#social-icons, #kemteck_footer {text-align:center;color:white;}
